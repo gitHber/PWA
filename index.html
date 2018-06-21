@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="main.css">
+  <link rel="manifest" href="manifest.json">
+  <title>PWA Project</title>
+</head>
+<body>
+  <h3>Hello PWA</h3>
+  <p>update content</p>
+  <p>update content 2</p>
+</body>
+<script>
+  // sw 脚本解析
+  if(navigator.serviceWorker !== null){
+    navigator.serviceWorker.register('sw.js')
+      .then(function(registration){
+        console.log('Registered events at scope: ', registration.scope)
+      })
+  }
+</script>
+
+</html>
