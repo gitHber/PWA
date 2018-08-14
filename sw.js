@@ -1,3 +1,6 @@
+/**
+ * 自定义 service-worker manifest.json获取出错
+ */
 var cacheStorageKey = 'minimal-pwa-1'
 
 var cacheList = [

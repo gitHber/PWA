@@ -17,9 +17,11 @@
 <script>
   // sw 脚本解析
   if(navigator.serviceWorker !== null){
-    navigator.serviceWorker.register('sw.js')
+    navigator.serviceWorker.register('service-worker.js')
       .then(function(registration){
-        console.log('Registered events at scope: ', registration.scope)
+        console.log('ServiceWorker registered events at scope: ', registration.scope)
+      }).catch(err => {
+        console.log('ServiceWorker registration failed', err)
       })
   }
 </script>
