@@ -20,19 +20,20 @@ sw.js         Service Worker 进行缓存
 ```
 ### 使用示例
 ```
-1. 启动本地服务
+1. npm install
+2. 启动本地服务
 npm run dev
 
-2. 启动 ngrok (外网映射，另起控制台)
+3. 启动 ngrok (外网映射，另起控制台)
 npm run ngrok
 
-3. 浏览器打开
+4. 浏览器打开
 根据ngrok控制台 Forwarding 的地址访问, 使用https
 
-4. 查看浏览器 Application 
+5. 查看浏览器 Application 
 可以看到Service Worker 读取sw.js, Cache Storage 缓存sw.js的指定文件, 关闭网络刷新，可以看到network文件from service worker
 
-5. 修改sw.js cacheStorageKey值
+6. 修改sw.js cacheStorageKey值
 修改改值, 重新刷新, 重新获取缓存
 
 ```
