@@ -21,11 +21,14 @@ sw.js         Service Worker 进行缓存
 ### 使用示例
 ```
 1. npm install
-2. 启动本地服务
+
+2. 启动 ngrok (外网映射，另起控制台)
+npm run ngrok
+
+3. 启动本地服务
 npm run dev
 
-3. 启动 ngrok (外网映射，另起控制台)
-npm run ngrok
+
 
 4. 浏览器打开
 根据ngrok控制台 Forwarding 的地址访问, 使用https
